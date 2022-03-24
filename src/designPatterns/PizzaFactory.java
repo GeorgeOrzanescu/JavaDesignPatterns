@@ -52,7 +52,7 @@ public class PizzaFactory {
         prepare();
 
         try {
-            Thread.sleep(2000);  // simulate time to prepare pizza
+            Thread.sleep(1000);  // simulate time to prepare pizza
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -63,6 +63,10 @@ public class PizzaFactory {
 
     private void prepare() {
         System.out.println("Preparing pizza");
+    }
+
+    public void cancelOrder(String pizzaType, String pizzaToppings, Client client) {
+        System.out.println("Client " + client.getName() + " canceled order of " + pizzaType + " with " + pizzaToppings);
     }
     
 }

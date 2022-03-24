@@ -1,3 +1,4 @@
+import designPatterns.CancelPizzaOrder;
 import designPatterns.Command;
 import designPatterns.OrderPizza;
 import designPatterns.PizzaFactory;
@@ -39,6 +40,10 @@ public class App {
 
         // COMMAND PATTERN
         Command orderPizza = new OrderPizza();
-        orderPizza.execute(pizzaFactory, "Marguerita", "Mozzarela", client1);  
+        Command cancelPizzaOrder = new CancelPizzaOrder();
+        orderPizza.execute(pizzaFactory, "Marguerita", "Mozzarela", client1); // order through command
+        cancelPizzaOrder.execute(pizzaFactory, "Marguerita", "Bacon", client2); // cancel through command
+        client1.makeCommand("OrderPizza"); // order through client
+        client2.makeCommand("CancelPizzaOrder"); // cancel through client
     }
 }
