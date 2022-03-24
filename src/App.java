@@ -14,7 +14,6 @@ public class App {
         //SINGLETON PATTERN
         PizzaFactory pizzaFactory = PizzaFactory.getInstance();
 
-
         // FACTORY PATTERN
         Pizza marguerita = pizzaFactory.createPizza("Marguerita");
         Pizza prosciuttoFunghi = pizzaFactory.createPizza("ProsciuttoFunghi");
@@ -35,8 +34,6 @@ public class App {
         Client client2 = new Client("Mary", "Paris", "987654321");
         pizzaFactory.takeOrder("Marguerita", "Bacon", client1);
         pizzaFactory.takeOrder("ProsciuttoFunghi", "Mozzarela", client2);
-
-
 
         // COMMAND PATTERN
         Command orderPizza = new OrderPizza();

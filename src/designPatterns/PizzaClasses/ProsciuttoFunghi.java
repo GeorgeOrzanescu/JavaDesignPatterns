@@ -11,7 +11,6 @@ public class ProsciuttoFunghi extends Pizza {
         this.setName("ProsciuttoFunghi");
     }
     
-
     public String toString() {
         return "ProsciuttoFunghi [ingredients=" + this.getIngredients() + ", price=" + this.getCost() + "]";
     }

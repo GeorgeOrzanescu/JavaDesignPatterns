@@ -7,7 +7,6 @@ public abstract class Pizza {
     private String name;
     private float price;
 
-
     public Pizza() {
         this.ingredients = new ArrayList<String>();
         this.price = 0.0f;

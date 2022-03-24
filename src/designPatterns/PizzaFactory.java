@@ -56,7 +56,6 @@ public class PizzaFactory {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        
         client.notifyPizzaReady("Dear: " + client.getName() +" your pizza " + type, finalPizza);
         return finalPizza;
     }

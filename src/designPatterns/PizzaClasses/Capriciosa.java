@@ -11,7 +11,6 @@ public class Capriciosa extends Pizza {
         this.setPrice(17.5f);
     }
     
-
     public String toString() {
         return "Capriciosa [ingredients=" + this.getIngredients() + ", price=" + this.getCost() + "]";
     }

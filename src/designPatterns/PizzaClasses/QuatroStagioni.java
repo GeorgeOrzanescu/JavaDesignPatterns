@@ -11,7 +11,6 @@ public class QuatroStagioni extends Pizza {
         this.setName("quatro stagioni");
     }
     
-
     public String toString() {
         return "QuatroStagioni [ingredients=" + this.getIngredients() + ", price=" + this.getCost() + "]";
     }

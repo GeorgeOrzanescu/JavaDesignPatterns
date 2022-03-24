@@ -13,7 +13,6 @@ public class WithExtraMozzarela extends PizzaTopingDecorator {
     public float getCost() {
         return pizza.getCost() + 1.5f;
     }
-
 }
     
 

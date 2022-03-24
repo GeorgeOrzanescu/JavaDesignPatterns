@@ -32,7 +32,6 @@ public class Client implements PizzaNotification {
                 '}';
     }
 
-
     @Override
     public void notifyPizzaReady(String notification, Pizza pizza) {
         System.out.println(notification + " is ready" +" and costs " + pizza.getCost());
@@ -52,6 +51,7 @@ public class Client implements PizzaNotification {
             String pizzaToppings = scanner.nextLine();
             command.execute(PizzaFactory.getInstance(), pizzaType, pizzaToppings, this);
         }
+        
         else if (type.equals("CancelPizzaOrder")) {
             command = new CancelPizzaOrder();
             System.out.println("Enter pizza type: ");
@@ -62,5 +62,4 @@ public class Client implements PizzaNotification {
         }
         
     }
-    
 }

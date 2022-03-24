@@ -10,7 +10,6 @@ public class Marguerita extends Pizza {
         this.setPrice(14.5f);
         this.setName("Marguerita");
     }
-    
 
     public String toString() {
         return "Marguerita [ingredients=" + this.getIngredients() + ", price=" + this.getCost() + "]";
